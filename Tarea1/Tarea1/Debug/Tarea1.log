@@ -1,0 +1,4 @@
+﻿  Tarea1.cpp
+C:\Users\SURFACE\source\repos\Semestre2020\Tarea1\Tarea1.cpp(5,10): warning C4067: símbolos (token) inesperados después de la directiva del preprocesador; se esperaba una nueva línea
+C:\Users\SURFACE\source\repos\Semestre2020\Tarea1\Tarea1.cpp(6,9): warning C4067: símbolos (token) inesperados después de la directiva del preprocesador; se esperaba una nueva línea
+  Tarea1.vcxproj -> C:\Users\SURFACE\source\repos\Semestre2020\Debug\Tarea1.exe
