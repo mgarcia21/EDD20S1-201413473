@@ -16,6 +16,14 @@ public class Tarea2 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        
+        Moneda moneda1 = new Moneda();
+        moneda1.cantidad = 250;
+        System.out.println(moneda1.nombre+" la cantidad para la moneda 1 es " + moneda1.cantidad);
+        moneda1.getNombre();
+        moneda1.Transferir(moneda1.cantidad);
+        System.out.println(moneda1.cantidad);
+        
     }
     
 }
