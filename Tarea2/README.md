@@ -9,13 +9,7 @@ _Se crearon 2 metodos, metodo trasnferir y metodo transferir from._
 Mira **Deployment** para conocer como desplegar el proyecto.
 
 
-### Pre-requisitos 📋
 
-_Que cosas necesitas para instalar el software y como instalarlas_
-
-```
-Da un ejemplo
-```
 
 ### transferir()🔧
 
