@@ -63,31 +63,38 @@ public class Tarea2 {
                          valor = sn.nextInt();
                          moneda0.transferir(moneda0, valor);
                          System.out.println("no. de cuenta: "+clientes[0]+" tiene: Q"+moneda0.getSaldo());
+                         Menu();
                          break;
                        case 1001:
                          System.out.println("Ingresa el valor a transferir a la cuenta 1001");
                          valor = sn.nextInt();
                          moneda1.transferir(moneda1, valor);
                          System.out.println("no. de cuenta: "+clientes[1]+" tiene: Q"+moneda1.getSaldo());
+                         Menu();
                          break;
                        case 1002:
                          System.out.println("Ingresa el valor a transferir a la cuenta 1002");
                          valor = sn.nextInt();
                          moneda2.transferir(moneda2, valor);
                          System.out.println("no. de cuenta: "+clientes[2]+" tiene: Q"+moneda2.getSaldo());
+                         Menu();
                          break;
                        case 1003:
                          System.out.println("Ingresa el valor a transferir a la cuenta 1003");
                          valor = sn.nextInt();
                          moneda3.transferir(moneda3, valor);
                          System.out.println("no. de cuenta: "+clientes[3]+" tiene: Q"+moneda3.getSaldo());
-                             break;
+        Menu();
+
+                         break;
 
                        case 1004:
                          System.out.println("Ingresa el valor a transferir a la cuenta 1004");
                          valor = sn.nextInt();
                          moneda4.transferir(moneda4, valor);
                          System.out.println("no. de cuenta: "+clientes[4]+" tiene: Q"+moneda4.getSaldo());
+                                 Menu();
+
                          break;
                        default:
                             System.out.println("Lo sentimos esa cuenta no existe, adios");
@@ -99,22 +106,217 @@ public class Tarea2 {
                    Menu();
                    break;
                 case 3:
-                   System.out.println("Transferir de usuario a usuario");
+                   System.out.println("Ingresa codigo de usuario que enviara fondos, pueden ser (1000,1001,1002,1003,1004):");
+                   codCliente = sn.nextInt();                   
+                   switch(codCliente){
+                       case 1000:
+                         System.out.println("Selecctionar a quien se le enviaran los fondos, pueden ser (1001,1002,1003,1004):");
+                         codCliente = sn.nextInt();                   
+                         switch(codCliente){
+                                    case 1001:
+                                    System.out.println("Ingresa el valor a transferir a la cuenta 1001");
+                                    valor = sn.nextInt();
+                                    moneda0.transferirFrom(moneda0, moneda1, valor);
+                                    System.out.println("no. de cuenta: "+clientes[0]+" tiene: Q"+moneda0.getSaldo());
+                                    System.out.println("no. de cuenta: "+clientes[1]+" tiene: Q"+moneda1.getSaldo());
+                                    break;
+                                  case 1002:
+                                    System.out.println("Ingresa el valor a transferir a la cuenta 1002");
+                                    valor = sn.nextInt();
+                                    moneda0.transferirFrom(moneda0, moneda2, valor);
+                                    System.out.println("no. de cuenta: "+clientes[0]+" tiene: Q"+moneda0.getSaldo());
+                                    System.out.println("no. de cuenta: "+clientes[2]+" tiene: Q"+moneda2.getSaldo());
+                                    break;
+                                  case 1003:
+                                    System.out.println("Ingresa el valor a transferir a la cuenta 1003");
+                                    valor = sn.nextInt();
+                                    moneda0.transferirFrom(moneda0, moneda3, valor);
+                                    System.out.println("no. de cuenta: "+clientes[0]+" tiene: Q"+moneda0.getSaldo());
+                                    System.out.println("no. de cuenta: "+clientes[3]+" tiene: Q"+moneda3.getSaldo());
+                                        break;
+                                  case 1004:
+                                    System.out.println("Ingresa el valor a transferir a la cuenta 1001");
+                                    valor = sn.nextInt();
+                                    moneda0.transferirFrom(moneda0, moneda4, valor);
+                                    System.out.println("no. de cuenta: "+clientes[0]+" tiene: Q"+moneda0.getSaldo());
+                                    System.out.println("no. de cuenta: "+clientes[4]+" tiene: Q"+moneda4.getSaldo());
+                                    break;
+                                  default:
+                                       System.out.println("Lo sentimos esa cuenta no existe, adios");
+                                      break;
+                                  }
+                         Menu();
+                         break;
+                       case 1001:
+                         System.out.println("Selecctionar a quien se le enviaran los fondos, pueden ser (1000,1002,1003,1004):");
+                         codCliente = sn.nextInt();                   
+                         switch(codCliente){
+                                    case 1000:
+                                    System.out.println("Ingresa el valor a transferir a la cuenta 1000");
+                                    valor = sn.nextInt();
+                                    moneda0.transferirFrom(moneda1, moneda0, valor);
+                                    System.out.println("no. de cuenta: "+clientes[1]+" tiene: Q"+moneda1.getSaldo());
+                                    System.out.println("no. de cuenta: "+clientes[0]+" tiene: Q"+moneda0.getSaldo());
+                                    break;
+                                  case 1002:
+                                    System.out.println("Ingresa el valor a transferir a la cuenta 1002");
+                                    valor = sn.nextInt();
+                                    moneda0.transferirFrom(moneda1, moneda2, valor);
+                                    System.out.println("no. de cuenta: "+clientes[1]+" tiene: Q"+moneda1.getSaldo());
+                                    System.out.println("no. de cuenta: "+clientes[2]+" tiene: Q"+moneda3.getSaldo());
+                                    break;
+                                  case 1003:
+                                    System.out.println("Ingresa el valor a transferir a la cuenta 1003");
+                                    valor = sn.nextInt();
+                                    moneda0.transferirFrom(moneda1, moneda3, valor);
+                                    System.out.println("no. de cuenta: "+clientes[1]+" tiene: Q"+moneda1.getSaldo());
+                                    System.out.println("no. de cuenta: "+clientes[3]+" tiene: Q"+moneda3.getSaldo());
+                                    break;
+                                  case 1004:
+                                    System.out.println("Ingresa el valor a transferir a la cuenta 1004");
+                                    valor = sn.nextInt();
+                                    moneda0.transferirFrom(moneda1, moneda4, valor);
+                                    System.out.println("no. de cuenta: "+clientes[1]+" tiene: Q"+moneda1.getSaldo());
+                                    System.out.println("no. de cuenta: "+clientes[4]+" tiene: Q"+moneda4.getSaldo());
+                                    break;
+                                  default:
+                                    System.out.println("Lo sentimos esa cuenta no existe, adios");
+                                    break;
+                                  }
+                         Menu();
+                         break;
+                       case 1002:
+                         System.out.println("Selecctionar a quien se le enviaran los fondos, pueden ser (1000,1002,1003,1004):");
+                         codCliente = sn.nextInt();                   
+                         switch(codCliente){
+                                    case 1000:
+                                    System.out.println("Ingresa el valor a transferir a la cuenta 1000");
+                                    valor = sn.nextInt();
+                                    moneda0.transferirFrom(moneda2, moneda0, valor);
+                                    System.out.println("no. de cuenta: "+clientes[2]+" tiene: Q"+moneda2.getSaldo());
+                                    System.out.println("no. de cuenta: "+clientes[0]+" tiene: Q"+moneda0.getSaldo());
+                                    break;
+                                  case 1002:
+                                    System.out.println("Ingresa el valor a transferir a la cuenta 1001");
+                                    valor = sn.nextInt();
+                                    moneda0.transferirFrom(moneda2, moneda1, valor);
+                                    System.out.println("no. de cuenta: "+clientes[2]+" tiene: Q"+moneda2.getSaldo());
+                                    System.out.println("no. de cuenta: "+clientes[1]+" tiene: Q"+moneda1.getSaldo());
+                                    break;
+                                  case 1003:
+                                    System.out.println("Ingresa el valor a transferir a la cuenta 1003");
+                                    valor = sn.nextInt();
+                                    moneda0.transferirFrom(moneda2, moneda3, valor);
+                                    System.out.println("no. de cuenta: "+clientes[2]+" tiene: Q"+moneda2.getSaldo());
+                                    System.out.println("no. de cuenta: "+clientes[3]+" tiene: Q"+moneda3.getSaldo());
+                                    break;
+                                  case 1004:
+                                    System.out.println("Ingresa el valor a transferir a la cuenta 1004");
+                                    valor = sn.nextInt();
+                                    moneda0.transferirFrom(moneda2, moneda4, valor);
+                                    System.out.println("no. de cuenta: "+clientes[2]+" tiene: Q"+moneda2.getSaldo());
+                                    System.out.println("no. de cuenta: "+clientes[4]+" tiene: Q"+moneda4.getSaldo());
+                                    break;
+                                  default:
+                                    System.out.println("Lo sentimos esa cuenta no existe, adios");
+                                    break;
+                                  }
+                         Menu();
+                         break;
+                       case 1003:
+                         System.out.println("Selecctionar a quien se le enviaran los fondos, pueden ser (1001,1002,1000,1004):");
+                         codCliente = sn.nextInt();                   
+                         switch(codCliente){
+                                    case 1000:
+                                    System.out.println("Ingresa el valor a transferir a la cuenta 1000");
+                                    valor = sn.nextInt();
+                                    moneda0.transferirFrom(moneda3, moneda0, valor);
+                                    System.out.println("no. de cuenta: "+clientes[3]+" tiene: Q"+moneda3.getSaldo());
+                                    System.out.println("no. de cuenta: "+clientes[0]+" tiene: Q"+moneda0.getSaldo());
+                                    break;
+                                  case 1001:
+                                    System.out.println("Ingresa el valor a transferir a la cuenta 1001");
+                                    valor = sn.nextInt();
+                                    moneda0.transferirFrom(moneda3, moneda1, valor);
+                                    System.out.println("no. de cuenta: "+clientes[3]+" tiene: Q"+moneda3.getSaldo());
+                                    System.out.println("no. de cuenta: "+clientes[1]+" tiene: Q"+moneda1.getSaldo());
+                                    break;
+                                  case 1002:
+                                    System.out.println("Ingresa el valor a transferir a la cuenta 1002");
+                                    valor = sn.nextInt();
+                                    moneda0.transferirFrom(moneda3, moneda2, valor);
+                                    System.out.println("no. de cuenta: "+clientes[3]+" tiene: Q"+moneda3.getSaldo());
+                                    System.out.println("no. de cuenta: "+clientes[2]+" tiene: Q"+moneda2.getSaldo());
+                                    break;
+                                  case 1004:
+                                    System.out.println("Ingresa el valor a transferir a la cuenta 1004");
+                                    valor = sn.nextInt();
+                                    moneda0.transferirFrom(moneda3, moneda4, valor);
+                                    System.out.println("no. de cuenta: "+clientes[3]+" tiene: Q"+moneda3.getSaldo());
+                                    System.out.println("no. de cuenta: "+clientes[4]+" tiene: Q"+moneda4.getSaldo());
+                                    break;
+                                  default:
+                                    System.out.println("Lo sentimos esa cuenta no existe, adios");
+                                    break;
+                                  }
+                         Menu();
+                         break;
+
+                       case 1004:
+                         System.out.println("Selecctionar a quien se le enviaran los fondos, pueden ser (1000,1002,1003,1001):");
+                         codCliente = sn.nextInt();                   
+                         switch(codCliente){
+                                    case 1000:
+                                    System.out.println("Ingresa el valor a transferir a la cuenta 1000");
+                                    valor = sn.nextInt();
+                                    moneda0.transferirFrom(moneda4, moneda0, valor);
+                                    System.out.println("no. de cuenta: "+clientes[4]+" tiene: Q"+moneda4.getSaldo());
+                                    System.out.println("no. de cuenta: "+clientes[0]+" tiene: Q"+moneda0.getSaldo());
+                                    break;
+                                  case 1002:
+                                    System.out.println("Ingresa el valor a transferir a la cuenta 1001");
+                                    valor = sn.nextInt();
+                                    moneda0.transferirFrom(moneda4, moneda1, valor);
+                                    System.out.println("no. de cuenta: "+clientes[4]+" tiene: Q"+moneda4.getSaldo());
+                                    System.out.println("no. de cuenta: "+clientes[1]+" tiene: Q"+moneda1.getSaldo());
+                                    break;
+                                  case 1003:
+                                    System.out.println("Ingresa el valor a transferir a la cuenta 1003");
+                                    valor = sn.nextInt();
+                                    moneda0.transferirFrom(moneda4, moneda3, valor);
+                                    System.out.println("no. de cuenta: "+clientes[4]+" tiene: Q"+moneda4.getSaldo());
+                                    System.out.println("no. de cuenta: "+clientes[3]+" tiene: Q"+moneda3.getSaldo());
+                                    break;
+                                  case 1001:
+                                    System.out.println("Ingresa el valor a transferir a la cuenta 1004");
+                                    valor = sn.nextInt();
+                                    moneda0.transferirFrom(moneda4, moneda1, valor);
+                                    System.out.println("no. de cuenta: "+clientes[4]+" tiene: Q"+moneda4.getSaldo());
+                                    System.out.println("no. de cuenta: "+clientes[1]+" tiene: Q"+moneda1.getSaldo());
+                                    break;
+                                  default:
+                                    System.out.println("Lo sentimos esa cuenta no existe, adios");
+                                    break;
+                                  }
+                         Menu();
+                         break;
+                       default:
+                            System.out.println("Lo sentimos esa cuenta no existe, adios");
+                            Menu();
+                            break;
+                   }     
                    break;
                 case 4:
                    salir=true;
                    break;
                 default:
                    System.out.println("Solo números entre 1 y 4");
+                   break;
            }
         }
         
         
-        
-
-
-        System.out.println("no. de cuenta: "+codigo2+" tiene: Q"+moneda2.getSaldo());
-        System.out.println("Restante Monedero: "+ moneda2.getMonedero()+" tiene: Q"+moneda2.getSaldo());
+      
 
         
         

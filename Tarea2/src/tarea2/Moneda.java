@@ -16,6 +16,7 @@ public class Moneda {
     int numero;
     double saldo;
     double monedero = 10000; 
+    
     public Moneda(int numero, double saldo) {
         this.numero = numero;
         this.saldo = saldo;
