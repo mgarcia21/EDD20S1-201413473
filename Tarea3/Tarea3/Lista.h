@@ -80,6 +80,7 @@ void Lista::eliminar(Nodo * n)
 	actual = primero;
 	anterior = NULL;
 	encontrado = false;
+	std::cout << "borrando  \n";
 	// búsqueda del nodo y del anterior
 	while ((actual != NULL) && !encontrado)
 	{

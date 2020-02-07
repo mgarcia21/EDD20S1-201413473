@@ -12,9 +12,13 @@ int main()
     Lista* list1 = new Lista();
     list1->insertarInicio(201413473,"Maynor Rolando Garcia Castro");
     list1->insertarInicio(201420455, "juan perez");
+    list1->insertarInicio(201212312, "julio federico perez");
+    list1->insertarInicio(201819281, "jorge ramon");
+    list1->insertarInicio(202012123, "ramiro gutierrez");
     list1->visualizar();
     list1->buscar(2);
     list1->buscar(4);
+    list1->buscar(8);
     Nodo* nodo = new Nodo(201413473, "Maynor Rolando Garcia Castro");
     list1->eliminar(nodo);
     list1->visualizar();
