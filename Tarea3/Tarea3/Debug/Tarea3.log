@@ -1,0 +1,9 @@
+﻿  Tarea3.cpp
+C:\Users\SURFACE\Documents\GitHub\EDD20S1-201413473\Tarea3\Tarea3\Tarea3.cpp(5,10): warning C4067: símbolos (token) inesperados después de la directiva del preprocesador; se esperaba una nueva línea
+C:\Users\SURFACE\Documents\GitHub\EDD20S1-201413473\Tarea3\Tarea3\Tarea3.cpp(6,9): warning C4067: símbolos (token) inesperados después de la directiva del preprocesador; se esperaba una nueva línea
+C:\Users\SURFACE\Documents\GitHub\EDD20S1-201413473\Tarea3\Tarea3\Lista.h(2,10): warning C4067: símbolos (token) inesperados después de la directiva del preprocesador; se esperaba una nueva línea
+C:\Users\SURFACE\Documents\GitHub\EDD20S1-201413473\Tarea3\Tarea3\Lista.h(3,9): warning C4067: símbolos (token) inesperados después de la directiva del preprocesador; se esperaba una nueva línea
+C:\Users\SURFACE\Documents\GitHub\EDD20S1-201413473\Tarea3\Tarea3\Nodo.h(3,10): warning C4067: símbolos (token) inesperados después de la directiva del preprocesador; se esperaba una nueva línea
+C:\Users\SURFACE\Documents\GitHub\EDD20S1-201413473\Tarea3\Tarea3\Nodo.h(4,9): warning C4067: símbolos (token) inesperados después de la directiva del preprocesador; se esperaba una nueva línea
+C:\Users\SURFACE\Documents\GitHub\EDD20S1-201413473\Tarea3\Tarea3\Lista.h(50,7): warning C4101: 'c': variable local sin referencia
+  Tarea3.vcxproj -> C:\Users\SURFACE\Documents\GitHub\EDD20S1-201413473\Tarea3\Debug\Tarea3.exe
